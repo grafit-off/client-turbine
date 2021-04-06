@@ -1,0 +1,65 @@
+.marketer {
+	margin-bottom: 250px;
+	&__container {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 180px;
+			height: 180px;
+
+			background: url(../../img/marketer-item-big.svg) center/cover no-repeat;
+
+			transform: translate(8%, -126%);
+			@media (max-width: $md3+px) {
+				transform: translate(-15%, -100%) scale(0.43);
+			}
+			@media (max-width: $md4+px) {
+				transform: translate(-19%, -78%) scale(0.4);
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 96px;
+			height: 96px;
+			background: url(../../img/marketer-item-small.svg) center/cover no-repeat;
+
+			transform: translate(-15%, 83%);
+			@media (max-width: $md3+px) {
+				transform: translate(-1%, 147%) scale(0.66);
+			}
+			@media (max-width: $md4+px) {
+				transform: translate(11%, 136%) scale(0.5);
+			}
+		}
+	}
+
+	&__heading {
+		max-width: 300px;
+
+		margin-bottom: 31px;
+		@media (max-width: $md3+px) {
+			max-width: 270px;
+		}
+		@media (max-width: $md3+px) {
+			margin-bottom: 23px;
+		}
+	}
+
+	&__text {
+		margin: 0;
+
+		font-size: 40px;
+		line-height: 150%;
+
+		@media (max-width: $md3+px) {
+			font-size: 25px;
+		}
+	}
+}

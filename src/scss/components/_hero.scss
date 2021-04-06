@@ -1,10 +1,13 @@
 .hero {
 	margin-top: 219px;
+	margin-bottom: 190px;
 	@media (max-width: $md3+px) {
 		margin-top: 95px;
+		margin-bottom: 157px;
 	}
 	@media (max-width: $md4+px) {
 		margin-top: 85px;
+		margin-bottom: 106px;
 	}
 	&__container {
 		display: flex;
@@ -93,10 +96,10 @@
 	}
 
 	&__link {
-		padding: 27px 85px;
 		margin-right: 100px;
 
 		@media (max-width: $md3+px) {
+			padding: 27px 85px;
 			margin-right: 10px;
 		}
 		@media (max-width: $md4+px) {

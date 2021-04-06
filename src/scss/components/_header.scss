@@ -2,13 +2,13 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-
+	z-index: 1;
 	width: 100%;
 
 	padding-top: 38px;
 	padding-bottom: 40px;
 
-	transition: padding 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+	transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 	@media (max-width: $md3+px) {
 		padding-top: 20px;
 	}
@@ -18,8 +18,9 @@
 	&--onscroll {
 		padding-top: 15px;
 		padding-bottom: 15px;
-		backdrop-filter: blur(10px);
+		background-color: $pearl-bush-color;
 		box-shadow: 0px 9px 51px 3px rgba(34, 60, 80, 0.31);
+		transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 	}
 	&__container {
 		position: relative;
