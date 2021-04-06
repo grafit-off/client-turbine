@@ -1,7 +1,7 @@
 .menu-burger {
 	position: fixed;
 	top: 50%;
-	left: 50px;
+	left: 56px;
 	z-index: 3;
 
 	transform: translateY(-50%);
@@ -28,6 +28,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 1;
 
 	min-height: 100vh;
 	min-width: 100vw;
@@ -226,8 +227,8 @@
 	}
 	&__list {
 		position: relative;
-		top: -22px;
-		left: 38px;
+		top: -15px;
+		left: 30px;
 
 		display: grid;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;

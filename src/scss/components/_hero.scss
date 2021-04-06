@@ -1,5 +1,106 @@
 .hero {
-	margin-top: 100px;
+	margin-top: 219px;
+	@media (max-width: $md3+px) {
+		margin-top: 95px;
+	}
+	@media (max-width: $md4+px) {
+		margin-top: 85px;
+	}
 	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@include maxwidth(1215) {
+			align-items: flex-end;
+		}
+	}
+
+	&__heading {
+		align-self: flex-start;
+
+		margin-bottom: 119px;
+
+		color: $font-color;
+
+		font-family: $ff2;
+		font-weight: 500;
+		font-size: 98px;
+		line-height: 115%;
+		@media (max-width: $md1+px) {
+			font-size: 56px;
+		}
+		@media (max-width: $md3+px) {
+			margin-bottom: 50px;
+
+			font-size: 35px;
+		}
+		@media (max-width: $md4+px) {
+			margin-bottom: 24px;
+		}
+	}
+	&__heading-desk {
+		@media (max-width: $md2+px) {
+			display: none;
+		}
+	}
+	&__heading-mobile {
+		display: none;
+		@media (max-width: $md2+px) {
+			display: block;
+		}
+	}
+	&__text {
+		position: relative;
+		max-width: 400px;
+		margin: 0;
+		margin-bottom: 50px;
+
+		font-size: 18px;
+		line-height: 150%;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 137px;
+			height: 148px;
+
+			background: url(../../img/line.svg) center/cover no-repeat;
+
+			transform: translate(20%, -118%);
+			@media (max-width: $md1+px) {
+				transform: translate(-110%, -70%) rotate(180deg);
+			}
+			@media (max-width: $md3+px) {
+				transform: translate(-95%, -55%) rotate(180deg) scale(0.45);
+			}
+			@media (max-width: $md4+px) {
+				display: none;
+			}
+		}
+
+		@media (max-width: $md3+px) {
+			max-width: 300px;
+			margin: 0px 0px 24px 0px;
+
+			font-size: 16px;
+		}
+		@media (max-width: $md4+px) {
+			margin-bottom: 50px;
+			max-width: none;
+		}
+	}
+
+	&__link {
+		padding: 27px 85px;
+		margin-right: 100px;
+
+		@media (max-width: $md3+px) {
+			margin-right: 10px;
+		}
+		@media (max-width: $md4+px) {
+			align-self: center;
+		}
 	}
 }

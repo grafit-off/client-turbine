@@ -47,7 +47,6 @@ headerLink.forEach((el) => {
 // Active header on scroll
 const header = document.querySelector(".header");
 let prevScrollpos = window.pageYOffset;
-console.log(prevScrollpos);
 
 function navOpen() {
 	if (prevScrollpos != 0) {
