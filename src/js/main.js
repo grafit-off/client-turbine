@@ -14,20 +14,21 @@ const closeBtn = document.querySelector('.nav__menu-close')
 function burgerToggle() {
 	headerBurger.classList.toggle('active');
 	headerMenu.classList.toggle('nav--visible');
-	body.classList.toggle('lock');
+	if (!isiPhone && !isiPad && !isiPod) { body.classList.toggle('lock'); }
 }
-
+if (isiPhone || isiPad || isiPod) {
+	scrollLock_BtnListener(headerBurger);
+}
 headerBurger.addEventListener('click', () => {
 	burgerToggle()
 })
 
-if (isiPhone || isiPad || isiPod) {
-	scrollLock_BtnListener(headerBurger);
-	scrollLock_BtnListener(closeBtn);
-}
-
 closeBtn.addEventListener('click', () => {
-	burgerToggle()
+	burgerToggle();
+	if (isiPhone || isiPad || isiPod) {
+		enableScroll();
+		headerBurger.classList.toggle('scroll')
+	}
 })
 headerLink.forEach((el) => {
 	el.addEventListener('click', () => {
