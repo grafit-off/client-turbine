@@ -1,15 +1,20 @@
-$main-color: #0f0f0f;
-$sub-color: #151515;
-$accent-color: #363636;
+$black-color: #262626;
+$orange-color: #f2994a;
+$orange-dark-color: #e07d2f;
+$pearl-bush-color: #e9dcd7;
+$white-color: #fff;
+$purpule-color: #4425bd;
+$font-color: #262626;
 
+$fz-heading: 13px;
 $fz-text: 18px;
-$fz-heading: 64px;
 
-$ff: "FuturaPT", sans-serif;
+$ff: "Inter", sans-serif;
+$ff2: "Montserrat", sans-serif;
 
 $minWidth: 320;
-$maxWidth: 1920; // Разрешение макета
-$maxWidthContainer: 1492; // Разрешение контейнера
+$maxWidth: 1600; // Разрешение макета
+$maxWidthContainer: 1200; // Разрешение контейнера
 
 $md1: $maxWidthContainer + 15; //desktop
 $md2: 991.98; // Tablet

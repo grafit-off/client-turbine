@@ -2,6 +2,7 @@
 html {
 	height: 100%;
 	width: 100%;
+
 	scroll-behavior: smooth;
 
 	font-size: 100%;
@@ -20,6 +21,10 @@ body {
 
 	height: 100%;
 	width: 100%;
+	// background: url(../img/bg.png) 0/500px repeat;
+	background: url(../img/bg.jpg) 0 0 / 100% no-repeat;
+	// background-color: $pearl-bush-color;
+	color: $font-color;
 
 	font-family: $ff;
 	font-weight: 400;
@@ -63,20 +68,25 @@ footer {
 	margin: 0 auto;
 }
 
-@media (max-width: $md2+px) and (orientation: portrait) {
+@media (max-width: $md2+px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media (max-width: $md3+px) {
 	.container {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 }
-
-@media (max-width: $md3+px) and (orientation: portrait) {
+@media (max-width: $md4+px) {
 	.container {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 }
-
 @media (max-height: $md4+px) and (max-width: 1023px) and (orientation: landscape) {
 	.container {
 		padding-left: 50px;
