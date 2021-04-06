@@ -9,6 +9,7 @@
 		left: 20px;
 	}
 
+	transition: transform 0.3s ease;
 	@include maxwidth(1365) {
 		position: absolute;
 		right: 20px;
@@ -22,6 +23,14 @@
 		top: auto;
 		left: auto;
 		transform: translateY(0);
+	}
+	@media (min-width: $md3+px) {
+		&:hover {
+			transform: translateY(-50%) scale(1.2);
+			transition: transform 0.3s ease;
+		}
+		&:focus {
+		}
 	}
 }
 .nav {

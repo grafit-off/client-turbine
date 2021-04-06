@@ -146,7 +146,7 @@
 	position: relative;
 	display: block;
 	width: 44px;
-	height: 19px;
+	height: 20px;
 
 	& span {
 		position: absolute;
@@ -183,12 +183,12 @@
 		transform: scale(0);
 	}
 	&.active:before {
-		top: 8px;
+		top: 9px;
 
 		transform: rotate(45deg);
 	}
 	&.active:after {
-		bottom: 8px;
+		bottom: 9px;
 
 		transform: rotate(-45deg);
 	}
