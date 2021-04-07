@@ -1,0 +1,72 @@
+.pain {
+	padding-top: 203px;
+	padding-bottom: calc(250px / 2);
+
+	@media (max-width: $md1+px) {
+		padding-top: 150px;
+	}
+	@media (max-width: $md3+px) {
+		padding-bottom: calc(150px / 2);
+	}
+	@media (max-width: $md4+px) {
+		padding-bottom: calc(100px / 2);
+	}
+	@include maxwidth(600) {
+		padding-top: 94px;
+	}
+	&__container {
+		display: flex;
+		@include maxwidth(600) {
+			flex-direction: column;
+		}
+	}
+
+	&__heading {
+		flex: 33.33%;
+		@media (max-width: $md3+px) {
+			flex: 50%;
+		}
+		@include maxwidth(600) {
+			margin-bottom: 26px;
+		}
+	}
+
+	&__list {
+		flex: 66.66%;
+		counter-reset: painlist;
+		@media (max-width: $md3+px) {
+			flex: 50%;
+		}
+	}
+
+	&__item {
+		display: flex;
+
+		max-width: 474px;
+
+		font-size: 18px;
+		line-height: 150%;
+
+		&:not(:last-child) {
+			margin-bottom: 50px;
+			@media (max-width: $md3+px) {
+				margin-bottom: 24px;
+			}
+		}
+
+		&::before {
+			content: "(" counter(painlist, decimal-leading-zero) ")";
+			counter-increment: painlist;
+
+			display: block;
+
+			margin-right: 15px;
+
+			line-height: 150%;
+		}
+		@media (max-width: $md3+px) {
+			max-width: none;
+			font-size: 16px;
+		}
+	}
+}

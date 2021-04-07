@@ -1,18 +1,15 @@
 .useful {
-	padding: 91px 0px 90px 0px;
-	margin-bottom: 160px;
+	padding: 340px 0px 100px 0px;
 
 	overflow: hidden;
 	@media (max-width: $md1+px) {
-		margin-bottom: 160px;
+		padding: 200px 0px 100px 0px;
 	}
 	@media (max-width: $md3+px) {
 		padding: 60px 0px 100px 0px;
-		margin-bottom: 180px;
 	}
 	@media (max-width: $md4+px) {
 		padding: 60px 0px 15px 0px;
-		margin-bottom: 95px;
 	}
 	&__container {
 		display: flex;
