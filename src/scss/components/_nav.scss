@@ -88,10 +88,11 @@
 
 		@media (max-width: $md3+px) {
 			padding-top: 20px;
+			padding-bottom: 20px;
 			flex-wrap: wrap;
 		}
 		@media (max-width: $md4+px) {
-			padding: 10px 0px 0px 0px;
+			padding: 10px 0px 10px 0px;
 		}
 	}
 	&__logo {
@@ -100,6 +101,7 @@
 			margin-right: 50px;
 		}
 		@media (max-width: $md3+px) {
+			margin-right: 10px;
 		}
 	}
 	&__btn-left {
@@ -234,6 +236,11 @@
 		overflow: auto;
 		padding-top: 80px;
 	}
+	@media (max-width: $md3+px) {
+		top: -120px;
+		padding-top: 120px;
+	}
+
 	&__list {
 		position: relative;
 		top: -15px;

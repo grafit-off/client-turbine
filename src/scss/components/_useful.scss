@@ -11,7 +11,7 @@
 		margin-bottom: 180px;
 	}
 	@media (max-width: $md4+px) {
-		padding: 10px 0px 15px 0px;
+		padding: 60px 0px 15px 0px;
 		margin-bottom: 95px;
 	}
 	&__container {
@@ -35,7 +35,7 @@
 		@include maxwidth(560) {
 			margin-bottom: 25px;
 		}
-		@media (max-width: $md3+px) {
+		@media (max-width: $md4+px) {
 			padding: 0;
 		}
 	}

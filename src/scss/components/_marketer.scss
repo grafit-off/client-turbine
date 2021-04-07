@@ -1,13 +1,15 @@
 .marketer {
-	margin-bottom: 250px;
-	@media (max-width: $md1+px) {
+	padding-top: 190px;
+	@media (max-width: $md3+px) {
+		padding-top: 157px;
 		margin-bottom: 150px;
 	}
 	@media (max-width: $md3+px) {
 		margin-bottom: 105px;
 	}
 	@media (max-width: $md4+px) {
-		margin-bottom: 100px;
+		margin-bottom: 50px;
+		padding-top: 106px;
 	}
 	&__container {
 		position: relative;

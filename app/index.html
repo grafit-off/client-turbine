@@ -106,11 +106,11 @@
 		<div class="nav__body">
 			<div class="nav__buttons ">
 				<div class="nav__btn-left">
-					<a class="nav__logo logo link-reset">client-turbine</a>
+					<a class="nav__logo logo link-reset" data-transfer=".nav__btn-right,767,first">client-turbine</a>
 					<a href="#" class="nav__login arrow-link link-reset">Вход</a>
 				</div>
 				<div class="nav__btn-right">
-					<button class="nav__lang btn-reset">ru</button>
+					<button class="nav__lang btn-reset" data-transfer=".nav__btn-left,767,first">ru</button>
 					<button class="nav__menu-close btn-reset" aria-label="Закрыть меню" aria-controls="nav" aria-expanded="true">
 						закрыть
 					</button>
@@ -119,12 +119,12 @@
 			<nav class="nav__menu menu" id='nav'>
 				<ol class="menu__list list-reset">
 					<li class="menu__item">
-						<a href="#" class="menu__link link-reset">
+						<a href="#marketer" class="menu__link link-reset">
 							<span>О проекте</span>
 						</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link link-reset"> <span>Для кого?</span></a>
+						<a href="#useful" class="menu__link link-reset"> <span>Для кого?</span></a>
 					</li>
 					<li class="menu__item">
 						<a href="#" class="menu__link link-reset"> <span>Преимущества</span></a>
@@ -161,7 +161,7 @@
 		<a href="#" class="hero__link main-btn-link link-reset">регистрация</a>
 	</div>
 </section>
-		<section class="marketer">
+		<section class="marketer" id="marketer">
 	<div class="marketer__container container">
 		<h2 class="marketer__heading main-heading">
 			сервис создан маркетологами
@@ -172,7 +172,7 @@
 		</p>
 	</div>
 </section>
-		<section class="useful">
+		<section class="useful" id="useful">
 	<div class="useful__container container">
 		<h2 class="useful__heading main-heading">кому будет полезен</h2>
 		<ul class="useful__list list-reset">
@@ -194,7 +194,7 @@
 	</main>
 	<footer class="footer">
 	<div class="footer__container container">
-		FOOTER
+		Footer
 	</div>
 </footer>
 	
