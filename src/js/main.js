@@ -14,6 +14,13 @@ const closeBtn = document.querySelector('.nav__menu-close')
 function burgerToggle() {
 	headerBurger.classList.toggle('active');
 	headerMenu.classList.toggle('nav--visible');
+	if (headerBurger.getAttribute('aria-expanded') == 'false') {
+		headerBurger.setAttribute('aria-expanded', 'true')
+		closeBtn.setAttribute('aria-expanded', 'true')
+	} else {
+		headerBurger.setAttribute('aria-expanded', 'false')
+	}
+
 	if (!isiPhone && !isiPad && !isiPod) { body.classList.toggle('lock'); }
 }
 if (isiPhone || isiPad || isiPod) {
@@ -25,6 +32,9 @@ headerBurger.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
 	burgerToggle();
+	if (closeBtn.getAttribute('aria-expanded') == 'true') {
+		closeBtn.setAttribute('aria-expanded', 'false')
+	}
 	if (isiPhone || isiPad || isiPod) {
 		enableScroll();
 		headerBurger.classList.toggle('scroll')
