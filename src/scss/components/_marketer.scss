@@ -1,7 +1,10 @@
 .marketer {
 	margin-bottom: 250px;
-	@media (max-width: $md3+px) {
+	@media (max-width: $md1+px) {
 		margin-bottom: 150px;
+	}
+	@media (max-width: $md3+px) {
+		margin-bottom: 105px;
 	}
 	@media (max-width: $md4+px) {
 		margin-bottom: 100px;

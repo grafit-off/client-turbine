@@ -5,7 +5,7 @@
 	z-index: 3;
 
 	transform: translateY(-50%);
-	@include maxwidth(1420) {
+	@include maxwidth(1500) {
 		left: 20px;
 	}
 
