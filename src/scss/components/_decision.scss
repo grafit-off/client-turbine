@@ -5,7 +5,7 @@
 		padding-top: calc(150px / 2);
 		padding-bottom: calc(150px / 2);
 	}
-	@media (max-width: $md4+px) {
+	@media (max-width: 582px) {
 		padding-top: calc(100px / 2);
 		padding-bottom: calc(100px / 2);
 	}
@@ -15,8 +15,8 @@
 	}
 
 	&__heading {
-		@media (max-width: $md4+px) {
-			margin-bottom: 25px;
+		@media (max-width: 582px) {
+			margin-bottom: 22px;
 		}
 	}
 
@@ -43,6 +43,17 @@
 
 			background: url(../img/marketer-item-big.svg) center/cover no-repeat;
 			transform: translate(50%, 48%);
+			@include maxwidth(1400) {
+				display: none;
+			}
+		}
+		@media (max-width: $md3+px) {
+			margin-bottom: 35px;
+		}
+		@include maxwidth(582) {
+			transform: translateY(0);
+			flex-direction: column;
+			margin-bottom: 50px;
 		}
 	}
 
@@ -57,10 +68,53 @@
 				max-width: 426px;
 				margin: 0px 0px 51px 0px;
 			}
+			@media (max-width: $md2+px) {
+				flex: 0 0 calc(50% - 20px);
+
+				max-width: none;
+
+				margin-right: 20px;
+				margin-bottom: 134px;
+			}
+			@media (max-width: $md3+px) {
+				flex: 0 0 50%;
+
+				margin-right: 0;
+				margin-top: 168px;
+				margin-bottom: 104px;
+				.decision__text {
+					margin: 0px 0px 46px 0px;
+				}
+			}
+			@include maxwidth(582) {
+				margin-top: 0;
+				margin-bottom: 0;
+				.decision__text {
+					max-width: none;
+					margin-bottom: 0;
+				}
+				.decision__image {
+					display: none;
+				}
+			}
 		}
 		&:nth-child(3n + 2) {
 			.decision__text {
 				margin-bottom: 443px;
+			}
+			@media (max-width: $md3+px) {
+				justify-content: flex-end;
+				.decision__text {
+					max-width: 250px;
+				}
+			}
+			@include maxwidth(582) {
+				margin-top: 0;
+				margin-bottom: 0;
+				.decision__text {
+					max-width: none;
+					margin-bottom: 0;
+				}
 			}
 		}
 		&:nth-child(3n + 3) {
@@ -68,12 +122,55 @@
 			justify-content: flex-end;
 			.decision__text {
 				flex: 0 0 66.66%;
-				margin-right: 159px;
+				margin-right: 170px;
+				@media (max-width: $md2+px) {
+					flex: 0 0 calc(50% - 20px);
+
+					max-width: none;
+					margin-right: 20px;
+				}
+			}
+			@media (max-width: $md2+px) {
+				flex-wrap: nowrap;
+				justify-content: flex-start;
 			}
 			.decision__image {
 				flex: 0 0 33.33%;
+				@media (max-width: $md2+px) {
+					flex: 0 0 50%;
+					max-width: none;
+				}
+			}
+			@include maxwidth(582) {
+				margin-top: 0;
+				margin-bottom: 0;
+				.decision__text {
+					flex: 100%;
+					max-width: none;
+					margin: 0px 0px 0px 0px;
+				}
 			}
 		}
+		@media (max-width: $md2+px) {
+			flex: 50%;
+		}
+		@include maxwidth(582) {
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+		}
+	}
+	&__text {
+		flex: 80%;
+
+		display: flex;
+
+		max-width: 230px;
+
+		margin: 0;
+
+		font-size: 18px;
+		line-height: 150%;
 
 		&::before {
 			content: "(" counter(decision-list, decimal-leading-zero) ")";
@@ -84,16 +181,12 @@
 			font-size: 18px;
 			line-height: 150%;
 		}
-	}
-	&__text {
-		flex: 80%;
-
-		max-width: 190px;
-
-		margin: 0;
-
-		font-size: 18px;
-		line-height: 150%;
+		@media (max-width: $md2+px) {
+			max-width: none;
+		}
+		@media (max-width: $md3+px) {
+			font-size: 16px;
+		}
 	}
 	&__image {
 		align-self: flex-start;
@@ -103,10 +196,42 @@
 		max-width: 400px;
 		max-height: 308px;
 
-		object-fit: contain;
+		object-fit: cover;
+		@media (max-width: $md3+px) {
+			max-width: 300px;
+			max-height: 206px;
+			object-fit: cover;
+		}
+		@include maxwidth(582) {
+			position: relative;
+			z-index: 1;
+			align-self: center;
+
+			max-width: 100%;
+			max-height: 100%;
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				z-index: 1;
+
+				width: 71px;
+				height: 71px;
+
+				background: url(../img/marketer-item-big.svg) center/cover no-repeat;
+				transform: translate(-15%, 120%);
+			}
+		}
 	}
 
 	&__link {
 		align-self: center;
+		@media (max-width: $md3+px) {
+			align-self: flex-start;
+		}
+		@include maxwidth(582) {
+			margin-bottom: 60px;
+		}
 	}
 }
