@@ -10,6 +10,8 @@
 		padding-bottom: calc(97px / 2);
 	}
 	&__container {
+		display: flex;
+		flex-direction: column;
 	}
 
 	&__heading {
@@ -20,9 +22,20 @@
 	}
 
 	&__accordion {
+		margin: 0px 0px 75px 0px;
+		@media (max-width: $md3+px) {
+			margin-bottom: 50px;
+		}
 	}
 
 	&__link {
+		align-self: center;
+
+		padding: 27px 48px;
+		margin-right: 100px;
+		@media (max-width: $md1+px) {
+			margin-right: 0;
+		}
 	}
 }
 
@@ -36,13 +49,27 @@
 
 			padding-top: 30px;
 			margin: 0px 168px 0px 0px;
+			@media (max-width: $md1+px) {
+				margin: 0px 50px 0px 0px;
+
+				padding-top: 15px;
+			}
+			@media (max-width: $md2+px) {
+				padding-top: 10px;
+			}
+			@media (max-width: $md3+px) {
+				margin: 0px 12px 0px 0px;
+			}
 		}
 		&:not(:first-child) {
 			.accordion__wrapp {
 				padding: 20px 0px 20px 0px;
 			}
 			&::before {
-				padding: 60px 0px 0px 0px;
+				padding: 40px 0px 0px 0px;
+				@media (max-width: $md2+px) {
+					padding-top: 30px;
+				}
 			}
 		}
 	}
@@ -63,6 +90,9 @@
 		font-size: 40px;
 		line-height: 150%;
 		cursor: pointer;
+		@media (max-width: $md2+px) {
+			font-size: 25px;
+		}
 	}
 	&__body {
 		display: block;
@@ -71,7 +101,6 @@
 		max-height: 0px;
 		max-width: 680px;
 		margin: 0;
-		margin-top: 20px;
 
 		overflow: hidden;
 		visibility: hidden;
@@ -83,6 +112,9 @@
 
 		will-change: max-height;
 		transition: max-height 0.5s ease, opacity 0.3s ease, visibility 0.3s ease;
+		@media (max-width: $md2+px) {
+			font-size: 16px;
+		}
 	}
 }
 
@@ -107,12 +139,26 @@
 		background: url(../img/acc-arrow.svg) center/cover no-repeat;
 
 		transform: rotate(-90deg);
-		transition: transform 0.3s ease;
+		transition: transform 0.2s ease;
+		@media (max-width: $md1+px) {
+			top: 50%;
+			transform: translateY(-50%) rotate(-90deg);
+		}
+	}
+	@media (max-width: $md2+px) {
+		padding-right: 0;
+		&::after {
+			display: none;
+		}
 	}
 }
 
 .accordion--active .accordion-triger {
 	&::after {
 		transform: rotate(0deg);
+		transition: transform 0.2s ease;
+		@media (max-width: $md1+px) {
+			transform: translateY(-50%) rotate(0deg);
+		}
 	}
 }
