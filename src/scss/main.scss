@@ -66,15 +66,24 @@
 /*! Work */
 @import "components/_work.scss";
 
-/*! Work */
+/*! Banner */
 @import "components/_banner.scss";
 
-/*! Work */
+/*! Tariffs */
 @import "components/_tariffs.scss";
+
+/*! Instruction */
+@import "components/_instruction.scss";
+
+/*! Material */
+@import "components/_material.scss";
+
+/*! Cases */
+@import "components/_cases.scss";
 
 /*! Footer */
 @import "components/_footer.scss";
 
 // /*! Modals  */
-// @import "components/_modals.scss";
+@import "components/_modals.scss";
 @import "_animations";

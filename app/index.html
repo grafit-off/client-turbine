@@ -136,7 +136,7 @@
 						<a href="#pain" class="menu__link link-reset"> <span>Боли</span></a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link link-reset"> <span>Наш телеграмм канал</span></a>
+						<a href="#materials" class="menu__link link-reset"> <span>Наш телеграмм канал</span></a>
 					</li>
 					<li class="menu__item">
 						<a href="#" class="menu__link link-reset"> <span>Видеоинструкция</span></a>
@@ -493,9 +493,108 @@
 		</ul>
 	</div>
 </section>
-		
-		
-		
+		<section class="instruction">
+	<div class="instruction__container container">
+		<h2 class="instruction__heading main-heading">видеоинструкция</h2>
+		<button class="instruction__video-btn modal-btn btn-reset" data-path='modal-video' aria-label="Включить видео">
+			<img src="img/Video-bg.jpg" class="instruction__video-poster" aria-hidden="true" alt="">
+		</button>
+	</div>
+</section>
+		<section class="materials" id="materials">
+	<div class="materials__container container">
+		<h2 class="materials__heading main-heading">полезные материалы</h2>
+		<div class="materials__info">
+			<span class="materials__text">Полезные материалы доступны в нашем телеграмм канале</span>
+			<a href="#" class="materials__link main-btn-link link-reset">Перейти в канал</a>
+		</div>
+	</div>
+</section>
+		<section class="cases">
+	<div class="cases__container container">
+		<h2 class="cases__heading main-heading">
+			Кейсы
+		</h2>
+		<div class="cases__swiper swiper">
+			<div class="swiper__button swiper__button--prev swiper__button--hidden"></div>
+			<div class="swiper__button swiper__button--next"></div>
+			<div class="swiper__pagination">
+			</div>
+			<div class="swiper__wrapper">
+				<div class="swiper__slide slide">
+					<div class="slide__wrapper">
+						<div class="slide__prev-info">
+							<p class="slide__text">До использования сервиса</p>
+							<span class="slide__quantity">6 789</span>
+						</div>
+						<div class="slide__next-info">
+							<p class="slide__text">Через 3 месяца пользования сервисом</p>
+							<span class="slide__quantity">15,9<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide1'>смотреть видео</button>
+						</div>
+						<span class="slide__author">@queen</span>
+					</div>
+				</div>
+				<div class="swiper__slide slide">
+					<div class="slide__wrapper">
+						<div class="slide__prev-info">
+							<p class="slide__text">До использования сервиса</p>
+							<span class="slide__quantity">4200</span>
+						</div>
+						<div class="slide__next-info">
+							<p class="slide__text">Через 3 месяца пользования сервисом</p>
+							<span class="slide__quantity">13,9<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide1'>смотреть видео</button>
+						</div>
+						<span class="slide__author">@queen</span>
+					</div>
+				</div>
+				<div class="swiper__slide slide">
+					<div class="slide__wrapper">
+						<div class="slide__prev-info">
+							<p class="slide__text">До использования сервиса</p>
+							<span class="slide__quantity">9 789</span>
+						</div>
+						<div class="slide__next-info">
+							<p class="slide__text">Через 3 месяца пользования сервисом</p>
+							<span class="slide__quantity">21,9<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide1'>смотреть видео</button>
+						</div>
+						<span class="slide__author">@queen</span>
+					</div>
+				</div>
+				<div class="swiper__slide slide">
+					<div class="slide__wrapper">
+						<div class="slide__prev-info">
+							<p class="slide__text">До использования сервиса</p>
+							<span class="slide__quantity">1209</span>
+						</div>
+						<div class="slide__next-info">
+							<p class="slide__text">Через 3 месяца пользования сервисом</p>
+							<span class="slide__quantity">7,9<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide1'>смотреть видео</button>
+						</div>
+						<span class="slide__author">@queen</span>
+					</div>
+				</div>
+				<div class="swiper__slide slide">
+					<div class="slide__wrapper">
+						<div class="slide__prev-info">
+							<p class="slide__text">До использования сервиса</p>
+							<span class="slide__quantity">6 789</span>
+						</div>
+						<div class="slide__next-info">
+							<p class="slide__text">Через 3 месяца пользования сервисом</p>
+							<span class="slide__quantity">15,9<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide1'>смотреть видео</button>
+						</div>
+						<span class="slide__author">@queen</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 		
 		
 	</main>
@@ -504,8 +603,24 @@
 		Footer
 	</div>
 </footer>
-	
-	<!-- <script src="resources/libs/swiper-bundle.min.js"></script> -->
+	<div class='modal' id='modal-video' aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content'>
+			<button aria-label='Close Modal' class='modal__close close-modal btn-reset'>
+				×
+			</button>
+
+			<div class='modal__body content'>
+				<video class="modal__video" controls="controls" poster="img/Video-bg.jpg">
+					<source src="resources/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					Тег video не поддерживается вашим браузером.
+					<a href="resources/video.mp4">Скачайте видео</a>.
+				</video>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="resources/libs/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
