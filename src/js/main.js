@@ -103,18 +103,21 @@ navScroll()
 const videoBtn = document.querySelector('.instruction__video-btn');
 const video = document.querySelector('.modal__video')
 
-
 videoBtn.addEventListener('click', () => {
 	setTimeout(() => {
 		video.play()
 	}, 200);
 })
-const modal = document.querySelector('.modal');
-modal.addEventListener('click', (e) => {
-	if (e.target == document.querySelector('.modal__close') || e.target == modal) {
-		video.pause()
-	}
-})
+
+const modal = document.querySelectorAll('.modal');
+modal.forEach((el) => {
+	el.addEventListener('click', (e) => {
+		let self = e.currentTarget;
+		if (e.target == document.querySelector('.modal__close') || e.target == el) {
+			self.querySelector('.modal__video').pause();
+		}
+	})
+});
 
 // Swiper
 const swiperBtnHidden = document.querySelector('.swiper__button--hidden');
@@ -122,6 +125,7 @@ const swiper = new Swiper(".swiper", {
 	containerModifierClass: "swiper",
 	wrapperClass: "swiper__wrapper",
 	slideClass: "swiper__slide",
+	spaceBetween: 50,
 	loop: true,
 	pagination: {
 		el: '.swiper__pagination',
@@ -135,3 +139,21 @@ const swiper = new Swiper(".swiper", {
 swiper.on('slideChange', () => {
 	swiperBtnHidden.classList.remove('swiper__button--hidden');
 })
+
+// Accordion
+document.querySelectorAll('.accordion-triger').forEach((item) =>
+	item.addEventListener('click', () => {
+		item.parentNode.classList.toggle('accordion--active');
+		let accordionBody = item.parentNode.querySelector('.accordion__body');
+		if (item.parentNode.classList.contains('accordion--active')) {
+			item.parentNode.querySelector('.accordion-triger').setAttribute('aria-expanded', true)
+			accordionBody.setAttribute('aria-hidden', false)
+			accordionBody.style.maxHeight = accordionBody.scrollHeight + 'px';
+		} else {
+			item.parentNode.querySelector('.accordion-triger').setAttribute('aria-expanded', false)
+			accordionBody.setAttribute('aria-hidden', true)
+			accordionBody.style.maxHeight = null;
+		}
+	})
+)
+// -- //

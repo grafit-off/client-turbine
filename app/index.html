@@ -139,13 +139,13 @@
 						<a href="#materials" class="menu__link link-reset"> <span>Наш телеграмм канал</span></a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link link-reset"> <span>Видеоинструкция</span></a>
+						<a href="#instruction" class="menu__link link-reset"> <span>Видеоинструкция</span></a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link link-reset"> <span>Отзывы</span></a>
+						<a href="#cases" class="menu__link link-reset"> <span>Отзывы</span></a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link link-reset"> <span>FAQ</span></a>
+						<a href="#quetions" class="menu__link link-reset"> <span>FAQ</span></a>
 					</li>
 				</ol>
 			</nav>
@@ -493,10 +493,10 @@
 		</ul>
 	</div>
 </section>
-		<section class="instruction">
+		<section class="instruction" id="instruction">
 	<div class="instruction__container container">
 		<h2 class="instruction__heading main-heading">видеоинструкция</h2>
-		<button class="instruction__video-btn modal-btn btn-reset" data-path='modal-video' aria-label="Включить видео">
+		<button class="instruction__video-btn modal-btn btn-reset " data-path='modal-video' aria-label="Включить видео">
 			<img src="img/Video-bg.jpg" class="instruction__video-poster" aria-hidden="true" alt="">
 		</button>
 	</div>
@@ -510,10 +510,13 @@
 		</div>
 	</div>
 </section>
-		<section class="cases">
+		<section class="cases" id="cases">
 	<div class="cases__container container">
-		<h2 class="cases__heading main-heading">
+		<h2 class="cases__heading cases__heading--desk main-heading">
 			Кейсы
+		</h2>
+		<h2 class="cases__heading cases__heading--mob main-heading">
+			Отзывы
 		</h2>
 		<div class="cases__swiper swiper">
 			<div class="swiper__button swiper__button--prev swiper__button--hidden"></div>
@@ -523,6 +526,7 @@
 			<div class="swiper__wrapper">
 				<div class="swiper__slide slide">
 					<div class="slide__wrapper">
+						<span class="slide__author slide__author--mob">@queen</span>
 						<div class="slide__prev-info">
 							<p class="slide__text">До использования сервиса</p>
 							<span class="slide__quantity">6 789</span>
@@ -532,11 +536,12 @@
 							<span class="slide__quantity">15,9<span class="slide__quantity-text"> тыс.</span></span>
 							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide1'>смотреть видео</button>
 						</div>
-						<span class="slide__author">@queen</span>
+						<span class="slide__author slide__author--desk">@queen</span>
 					</div>
 				</div>
 				<div class="swiper__slide slide">
 					<div class="slide__wrapper">
+						<span class="slide__author slide__author--mob">@queen</span>
 						<div class="slide__prev-info">
 							<p class="slide__text">До использования сервиса</p>
 							<span class="slide__quantity">4200</span>
@@ -544,13 +549,30 @@
 						<div class="slide__next-info">
 							<p class="slide__text">Через 3 месяца пользования сервисом</p>
 							<span class="slide__quantity">13,9<span class="slide__quantity-text"> тыс.</span></span>
-							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide1'>смотреть видео</button>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide2'>смотреть видео</button>
 						</div>
-						<span class="slide__author">@queen</span>
+						<span class="slide__author slide__author--desk">@queen</span>
 					</div>
 				</div>
 				<div class="swiper__slide slide">
 					<div class="slide__wrapper">
+
+						<span class="slide__author slide__author--mob">@queen</span>
+						<div class="slide__prev-info">
+							<p class="slide__text">До использования сервиса</p>
+							<span class="slide__quantity">1579</span>
+						</div>
+						<div class="slide__next-info">
+							<p class="slide__text">Через 3 месяца пользования сервисом</p>
+							<span class="slide__quantity">11,2<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide3'>смотреть видео</button>
+						</div>
+						<span class="slide__author slide__author--desk">@queen</span>
+					</div>
+				</div>
+				<div class="swiper__slide slide">
+					<div class="slide__wrapper">
+						<span class="slide__author slide__author--mob">@queen</span>
 						<div class="slide__prev-info">
 							<p class="slide__text">До использования сервиса</p>
 							<span class="slide__quantity">9 789</span>
@@ -560,11 +582,12 @@
 							<span class="slide__quantity">21,9<span class="slide__quantity-text"> тыс.</span></span>
 							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide1'>смотреть видео</button>
 						</div>
-						<span class="slide__author">@queen</span>
+						<span class="slide__author slide__author--desk">@queen</span>
 					</div>
 				</div>
 				<div class="swiper__slide slide">
 					<div class="slide__wrapper">
+						<span class="slide__author slide__author--mob">@queen</span>
 						<div class="slide__prev-info">
 							<p class="slide__text">До использования сервиса</p>
 							<span class="slide__quantity">1209</span>
@@ -572,30 +595,96 @@
 						<div class="slide__next-info">
 							<p class="slide__text">Через 3 месяца пользования сервисом</p>
 							<span class="slide__quantity">7,9<span class="slide__quantity-text"> тыс.</span></span>
-							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide1'>смотреть видео</button>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide2'>смотреть видео</button>
 						</div>
-						<span class="slide__author">@queen</span>
+						<span class="slide__author slide__author--desk">@queen</span>
 					</div>
 				</div>
 				<div class="swiper__slide slide">
 					<div class="slide__wrapper">
+						<span class="slide__author slide__author--mob">@queen</span>
 						<div class="slide__prev-info">
 							<p class="slide__text">До использования сервиса</p>
-							<span class="slide__quantity">6 789</span>
+							<span class="slide__quantity">8 919</span>
 						</div>
 						<div class="slide__next-info">
 							<p class="slide__text">Через 3 месяца пользования сервисом</p>
-							<span class="slide__quantity">15,9<span class="slide__quantity-text"> тыс.</span></span>
-							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide1'>смотреть видео</button>
+							<span class="slide__quantity">26,9<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide3'>смотреть видео</button>
 						</div>
-						<span class="slide__author">@queen</span>
+						<span class="slide__author slide__author--desk">@dsdaq</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-		
+		<section class="questions" id='quetions'>
+	<div class="questions__container container">
+		<h2 class="questions__heading main-heading">
+			ответы на вопросы
+		</h2>
+		<ul class='questions__accordion accordion list-reset'>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false"> Как Client Turbine поможет мне и зачем это нужно?</button>
+					<p class='accordion__body' aria-hidden="true">
+						Наш сервис поможет вам значительно снизить стоимость привлечения подписчика. Вы сэкономите ваш бюджет в 2-5 раз
+					</p>
+				</div>
+			</li>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false"> Это безопасно? Меня не заблокируют?</button>
+					<p class='accordion__body' aria-hidden="true">
+						Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+					</p>
+				</div>
+			</li>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false"> Кому подходит наш сервис?</button>
+					<p class='accordion__body' aria-hidden="true">
+						Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Семантика агентство лучше, текстами, алфавит большого текстов маленький единственное запятой свою реторический переписали страна несколько осталось скатился которой дал, правилами назад маленькая рот великий всемогущая. От всех о жаренные единственное жизни.
+					</p>
+				</div>
+			</li>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false"> Я не знаю, какую пользу давать людям и что им бесплатного дать, чтобы они на меня подписались.</button>
+					<p class='accordion__body' aria-hidden="true">
+						Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал вопроса свой силуэт там.
+					</p>
+				</div>
+			</li>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false">Что будет с моей ссылкой, если я его не продлю?</button>
+					<p class='accordion__body' aria-hidden="true">
+						Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Последний агентство большой залетают составитель! Выйти текста назад осталось большой!
+					</p>
+				</div>
+			</li>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false"> Как быстро сервис проверяет подписался на меня человек или нет?</button>
+					<p class='accordion__body' aria-hidden="true">
+						Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Букв до, текстами моей языком снова семантика.
+					</p>
+				</div>
+			</li>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false"> Я хочу стать партнером и привлекать вам новых пользователей, что мне за это будет?</button>
+					<p class='accordion__body' aria-hidden="true">
+						Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные.
+					</p>
+				</div>
+			</li>
+		</ul>
+		<a href="#" class="questions__link main-btn-link link-reset">начать уже сегодня</a>
+	</div>
+</section>
 		
 	</main>
 	<footer class="footer">
@@ -610,6 +699,55 @@
 				×
 			</button>
 
+			<div class='modal__body content'>
+				<video class="modal__video" controls="controls" poster="img/Video-bg.jpg">
+					<source src="resources/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					Тег video не поддерживается вашим браузером.
+					<a href="resources/video.mp4">Скачайте видео</a>.
+				</video>
+			</div>
+		</div>
+	</div>
+</div>
+<div class='modal' id='modal-slide1' aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content'>
+			<button aria-label='Close Modal' class='modal__close close-modal btn-reset'>
+				×
+			</button>
+			<div class='modal__body content'>
+				<video class="modal__video" controls="controls" poster="img/Video-bg.jpg">
+					<source src="resources/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					Тег video не поддерживается вашим браузером.
+					<a href="resources/video.mp4">Скачайте видео</a>.
+				</video>
+			</div>
+		</div>
+	</div>
+</div>
+<div class='modal' id='modal-slide2' aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content'>
+			<button aria-label='Close Modal' class='modal__close close-modal btn-reset'>
+				×
+			</button>
+
+			<div class='modal__body content'>
+				<video class="modal__video" controls="controls" poster="img/Video-bg.jpg">
+					<source src="resources/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					Тег video не поддерживается вашим браузером.
+					<a href="resources/video.mp4">Скачайте видео</a>.
+				</video>
+			</div>
+		</div>
+	</div>
+</div>
+<div class='modal' id='modal-slide3' aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content'>
+			<button aria-label='Close Modal' class='modal__close close-modal btn-reset'>
+				×
+			</button>
 			<div class='modal__body content'>
 				<video class="modal__video" controls="controls" poster="img/Video-bg.jpg">
 					<source src="resources/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
