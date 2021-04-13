@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!-- Кодировка -->
+	<meta charset="UTF-8">
+	<!-- Настройки viewport -->
+	<meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Отключение вызова текстовых номеров -->
+	<meta name="format-detection" content='telephone=no' />
+	<!--  
+		SEO META 
+			Краткое описание, ключевые слова
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+	
+			Индексирование странички
+		<meta name="robots" content="" />
+			Полный запрет - content="noindex, nofollow" или content="none"
+			Запрет индексации картинок и ссылок content="noimage, nofollow"
+			Информация
+		<meta name="Author" content="-" />
+		<meta name="Copyright" content="-" />
+		<meta name="Address" content="-" />
+	
+			Редирект | перенаправление
+		<meta http-equiv='refresh' content='0;url=' /> *0 - время перед началом переадресации в секундах, url - ссылка куда переадресовывать
+	
+	
+			Информации о странице, которая будет выводится в записи социальной сети при репосте сайта (Open Graph)
+			Локализация сайта
+		<meta property="og:locale" content="ru_RU" />
+	
+			Тип контента
+		<meta property="og:type" content="article" />
+	
+			Название сайта 
+		<meta property="og:site_name" content=""/>
+	
+			Заголовок страницы
+		<meta property="og:title" content=""/>
+	
+			Описание страницы 
+		<meta property="og:description" content=""/>
+	
+			Ссылка на текущую страницу
+		<meta property="og:url" content=""/>
+	
+			Изображение
+		<meta property="og:image" content=""/>  *вставить ссылку в content
+	
+	
+			Twitter Cards
+		<meta name="twitter:card" content="summary">
+	
+			Имя/логин автора 
+		<meta name="twitter:site" content="Имя">
+	
+			Название страницы 
+		<meta name="twitter:title" content="META теги">
+	
+			Описание страницы 
+		<meta name="twitter:description" content="про META теги">
+	
+			Cсылка на изображение
+		<meta name="twitter:image" content=""> *вставить ссылку в content	
+	-->
+
+	<link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
+	<!-- <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin /> -->
+
+	<link href="fonts/Inter-Bold.woff" as="font" type="font/woff" />
+	<link href="fonts/Inter-Light.woff" as="font" type="font/woff" />
+	<link href="fonts/Inter-SemiBold.woff" as="font" type="font/woff" />
+	<link href="fonts/Inter-Regular.woff" as="font" type="font/woff" />
+	<!-- <link href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" />
+	<link href="fonts/Montserrat-Medium.woff" as="font" type="font/woff" /> -->
+
+
+	<link rel="icon" href="resources/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="180x180" href="resources/favicon.png" />
+
+	<!-- <link rel="stylesheet" href="resources/libs/swiper-bundle.min.css" /> -->
+	<link rel="stylesheet" href="css/main.min.css" />
+	<title>Качественное продвижение личного бренда - CLIENT-TURBINE</title>
+</head>
+
+<body>
+	<header class="header fixed-padding">
+	<div class="header__container container">
+		<a class="header__logo logo link-reset">client-turbine</a>
+		<a href="#" class="header__login arrow-link link-reset">Вход</a>
+	</div>
+</header>
+	<main class="main-content">
+		<button class="menu-burger burger btn-reset" data-transfer=".header__container, 1365, last" aria-label="Открыть меню сайта" aria-controls="nav" aria-expanded="false">
+	<span></span>
+</button>
+<div class="nav">
+	<div class="nav__container container">
+		<div class="nav__body">
+			<div class="nav__buttons ">
+				<div class="nav__btn-left">
+					<a class="nav__logo logo link-reset" data-transfer=".nav__btn-right,767,first">client-turbine</a>
+					<a href="#" class="nav__login arrow-link link-reset">Вход</a>
+				</div>
+				<div class="nav__btn-right">
+					<button class="nav__lang btn-reset" data-transfer=".nav__btn-left,767,first">ru</button>
+					<button class="nav__menu-close btn-reset" aria-label="Закрыть меню" aria-controls="nav" aria-expanded="true">
+						закрыть
+					</button>
+				</div>
+			</div>
+			<nav class="nav__menu menu" id='nav'>
+				<ol class="menu__list list-reset">
+					<li class="menu__item">
+						<a href="#marketer" class="menu__link link-reset">
+							<span>О проекте</span>
+						</a>
+					</li>
+					<li class="menu__item">
+						<a href="#useful" class="menu__link link-reset"> <span>Для кого?</span></a>
+					</li>
+					<li class="menu__item">
+						<a href="#pluses" class="menu__link link-reset"> <span>Преимущества</span></a>
+					</li>
+					<li class="menu__item">
+						<a href="#work" class="menu__link link-reset"> <span>Как это работает</span></a>
+					</li>
+					<li class="menu__item">
+						<a href="#pain" class="menu__link link-reset"> <span>Боли</span></a>
+					</li>
+					<li class="menu__item">
+						<a href="#materials" class="menu__link link-reset"> <span>Наш телеграмм канал</span></a>
+					</li>
+					<li class="menu__item">
+						<a href="#instruction" class="menu__link link-reset"> <span>Видеоинструкция</span></a>
+					</li>
+					<li class="menu__item">
+						<a href="#cases" class="menu__link link-reset"> <span>Отзывы</span></a>
+					</li>
+					<li class="menu__item">
+						<a href="#quetions" class="menu__link link-reset"> <span>FAQ</span></a>
+					</li>
+				</ol>
+			</nav>
+		</div>
+	</div>
+</div>
+		<section class="hero">
+	<div class="hero__container container">
+		<h1 class="hero__heading"><span class="hero__heading-desk">Качественное продвижение личного бренда</span>
+			<span class="hero__heading-mobile">Продвигайте личный бренд эффективно</span>
+		</h1>
+		<p class="hero__text">Cервис для эффективного привлечения подписчиков в личные блоги Instagram через таргетированную рекламу</p>
+		<a href="#" class="hero__link main-btn-link link-reset">регистрация</a>
+	</div>
+</section>
+		<section class="marketer" id="marketer">
+	<div class="marketer__container container">
+		<h2 class="marketer__heading main-heading">
+			сервис создан маркетологами
+			для маркетологов
+		</h2>
+		<p class="marketer__text">
+			Мы маркетологи, поэтому понимаем как технические, так и бизнес-задачи создания лидмагнитов. Именно поэтому мы создали данный продукт, чтобы помочь таким же маркетологам и профессионалам, как и мы.
+		</p>
+	</div>
+</section>
+		<section class="useful" id="useful">
+	<div class="useful__container container">
+		<h2 class="useful__heading main-heading">кому будет полезен</h2>
+		<ul class="useful__list list-reset">
+			<li class="useful__item useful-item">
+				<span class="useful-item__heading">Эксперты</span>
+				<img src="img/useful-item1.jpg" alt="Мужчина с бородой в белом одеянии" class="useful-item__image">
+			</li>
+			<li class="useful__item useful-item">
+				<span class="useful-item__heading">Блогеры</span>
+				<img src="img/useful-item3.jpg" alt="" class="useful-item__image">
+			</li>
+			<li class="useful__item useful-item">
+				<span class="useful-item__heading">Онлайн-школы</span>
+				<img src="img/useful-item2.jpg" alt="" class="useful-item__image">
+			</li>
+		</ul>
+	</div>
+</section>
+		<section class="pain" id="pain">
+	<div class="pain__container container">
+		<h2 class="pain__heading main-heading">Боли пользователей</h2>
+		<ol class="pain__list list-reset">
+			<li class="pain__item">
+				Дорого стоит подписчик. Вероятность бана.
+			</li>
+			<li class="pain__item">
+				С одного блогера подписчик может выходить по 5 рублей, с другого по 100. Вы затрачиваете много времени на общение и поиск хорошего блогера. Подписчики массово подписываются, а потом уходят
+			</li>
+			<li class="pain__item">
+				С одного блогера подписчик может выходить по 5 рублей, с другого по 100. Вы затрачиваете много времени на общение и поиск хорошего блогера. Подписчики массово подписываются, а потом уходят
+			</li>
+		</ol>
+	</div>
+</section>
+		<section class="pluses" id="pluses">
+	<div class="pluses__container container">
+		<h2 class="pluses__heading main-heading">преимущества пользования сервисом</h2>
+		<ul class="pluses__list list-reset">
+			<li class="pluses__item pluses-item pluses-item--payment">
+				<h3 class="pluses-item__heading">
+					Оплата
+				</h3>
+				<p class="pluses-item__text">
+					Мы не привязываемся к оплате с каждого, за каждого подписчика
+				</p>
+			</li>
+			<li class="pluses__item pluses-item pluses-item--styles">
+				<h3 class="pluses-item__heading">
+					Стили
+				</h3>
+				<p class="pluses-item__text">
+					Несколько стилей подписных страниц
+				</p>
+			</li>
+			<li class="pluses__item pluses-item pluses-item--analitics">
+				<h3 class="pluses-item__heading">
+					Аналитика
+				</h3>
+				<p class="pluses-item__text">
+					Аналитика просмотров и подписавшихся
+				</p>
+			</li>
+		</ul>
+	</div>
+</section>
+		<section class="decision" id="decision">
+	<div class="decision__container container">
+		<h2 class="decision__heading main-heading">проблемы, которые решает сервис</h2>
+		<ol class="decision__list list-reset">
+			<li class="decision__item">
+				<p class="decision__text">
+					Ваш аккаунт не забанят, так как никаких действий через ваш аккунт не будет проделываться. Всю работу выполнит наш сервис.
+				</p>
+				<div class="decision__image">
+					<img src="img/decision1.jpg" alt="Белый стол с телефоно, тетрадкой и ручкой" class="decision__image">
+				</div>
+			</li>
+			<li class="decision__item ">
+				<p class="decision__text">Приводите новых вовлеченных подписчиков. Настоящая целевая аудитория всегда ценится больше рекламодателями. Увеличить прирост просмотров сторисов
+				</p>
+			</li>
+			<li class="decision__item ">
+				<p class="decision__text">Приводите новых вовлеченных подписчиков. Настоящая целевая аудитория всегда ценится больше рекламодателями. Увеличить прирост просмотров сторисов
+				</p>
+				<div class="decision__image" data-transfer=".decision, 582, last">
+					<img src="img/decision2.jpg" class="decision__image" alt="Белая комнатат с белым столом по средине">
+
+				</div>
+			</li>
+
+		</ol>
+		<a href="#" class="decision__link main-btn-link link-reset">регистрация</a>
+	</div>
+</section>
+		<section class="work" id="work">
+	<div class="work__container container">
+		<h2 class="work__heading main-heading">Как это работает</h2>
+		<span class="work__subheading">Как из холодного лида сделать теплого и вовлеченного подписчика</span>
+		<ol class="work__list list-reset">
+			<li class="work__item">
+				Вы придумываете для своего аккаунта полезный материал. Это может быть мануал, чек-лист или видеоурок. Загружаете на Гугл диск или ютуб, открываете доступ только по ссылке.
+			</li>
+			<li class="work__item">В нашем сервисе создаёте специальную «подписную страницу», которая содержит в себе описание полезного материала. Указываете ваш логин инстаграм на который нужно подписаться, чтобы получить материал. Пароль не требуется.</li>
+			<li class="work__item">Сервис выдаст вам специальную ссылку, по которой можно будет получить материал, подписавшись на ваш аккаунт. Вы запускаете таргетированную рекламу в инстаграм с призывом бесплатно скачать ваш полезный материал.</li>
+			<li class="work__item">Чтобы скачать материал, сервис предложит человеку подписаться на ваш аккаунт и автоматически проверит подписку.</li>
+			<li class="work__item">Если подписка на ваш аккаунт будет найдена, то ему автоматически выдаётся доступ к вашему материалу. Если нет, то сервис еще раз попросит человека подписаться на Вас, а материал выдан не будет.</li>
+		</ol>
+	</div>
+</section>
+		<div class="banner">
+	<div class="banner__container">
+		<img src="img/plug.jpg" alt="Заглушка" class="banner__image">
+	</div>
+</div>
+		<section class="tariffs">
+	<div class="tariffs__container container">
+		<h2 class="tariffs__heading main-heading">
+			тарифы и стоимость
+		</h2>
+		<table class="tariffs__table tariff tariff--desc">
+			<tr class="tariff__row">
+				<th></th>
+				<th>
+					<h3 class="tariff__name">Trial</h3>
+					<div class="tariff__price">Free</div>
+				</th>
+				<th>
+					<h3 class="tariff__name">Advanced</h3>
+					<div class="tariff__price">$26 <span class="tariff__price-info">/month</span></div>
+				</th>
+				<th>
+					<h3 class="tariff__name">Pro</h3>
+					<div class="tariff__price">$39 <span class="tariff__price-info">/year</span></div>
+				</th>
+			</tr>
+			<tr class="tariff__row">
+				<td class="tariff__item tariff__item--first">Первый</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+			</tr>
+			<tr class="tariff__row">
+				<td class="tariff__item tariff__item--first">Download Free Song</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+				<td class="tariff__item"> <svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+			</tr>
+			<tr class="tariff__row">
+				<td class="tariff__item tariff__item--first">The Best Answers</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+			</tr>
+			<tr class="tariff__row">
+				<td class="tariff__item tariff__item--first">Help Finding Information</td>
+				<td class="tariff__item">
+
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-lock"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+			</tr>
+			<tr class="tariff__row">
+				<td class="tariff__item tariff__item--first">Windows Registry</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-lock"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+			</tr>
+			<tr class="tariff__row">
+				<td class="tariff__item tariff__item--first">Download Anything</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-lock"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-lock"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+			</tr>
+			<tr class="tariff__row">
+				<td class="tariff__item">Anonymous Proxy</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-lock"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-lock"></use>
+					</svg>
+				</td>
+				<td class="tariff__item">
+					<svg aria-hidden="true">
+						<use xlink:href="img/sprite.svg#icon-done"></use>
+					</svg>
+				</td>
+			</tr>
+			<tr class="tariff__row">
+				<td></td>
+				<td><a href="#" class="tariff__link main-btn-link link-reset">Попробовать триал</a>
+				</td>
+				<td>
+					<a href="#" class="tariff__link main-btn-link link-reset">Заказать</a>
+				</td>
+				<td>
+					<a href="#" class="tariff__link main-btn-link link-reset">Заказать</a>
+				</td>
+			</tr>
+		</table>
+		<ul class="tariffs__body-mobile list-reset">
+			<li class="tariffs__tariff tariff">
+				<h3 class="tariff__name">Trial</h3>
+				<div class="tariff__price">Free</div>
+				<ul class="tariff__list list-reset">
+					<li class="tariff__item">Первый</li>
+					<li class="tariff__item">Download Free Song</li>
+					<li class="tariff__item">The Best Answers</li>
+					<li class="tariff__item tariff__item--lock">Help Finding Information</li>
+					<li class="tariff__item tariff__item--lock">Windows Registry</li>
+					<li class="tariff__item tariff__item--lock">Download Anything</li>
+					<li class="tariff__item tariff__item--lock">Anonymous Proxy</li>
+				</ul>
+				<a href="#" class="tariff__link link-reset main-btn-link">Попробовать триал</a>
+			</li>
+			<li class="tariffs__tariff tariff">
+				<h3 class="tariff__name">Advanced</h3>
+				<div class="tariff__price">$26 <span class="tariff__price-info">/month</span></div>
+				<ul class="tariff__list list-reset">
+					<li class="tariff__item">Первый</li>
+					<li class="tariff__item">Download Free Song</li>
+					<li class="tariff__item">The Best Answers</li>
+					<li class="tariff__item">Help Finding Information</li>
+					<li class="tariff__item">Windows Registry</li>
+					<li class="tariff__item tariff__item--lock">Download Anything</li>
+					<li class="tariff__item tariff__item--lock">Anonymous Proxy</li>
+				</ul>
+				<a href="#" class="tariff__link link-reset main-btn-link">Заказать</a>
+			</li>
+			<li class="tariffs__tariff tariff">
+				<h3 class="tariff__name">Pro</h3>
+				<div class="tariff__price">$39 <span class="tariff__price-info">/year</span></div>
+				<ul class="tariff__list list-reset">
+					<li class="tariff__item">Первый</li>
+					<li class="tariff__item">Download Free Song</li>
+					<li class="tariff__item">The Best Answers</li>
+					<li class="tariff__item">Help Finding Information</li>
+					<li class="tariff__item">Windows Registry</li>
+					<li class="tariff__item">Download Anything</li>
+					<li class="tariff__item">Anonymous Proxy</li>
+				</ul>
+				<a href="#" class="tariff__link link-reset main-btn-link">Заказать</a>
+			</li>
+		</ul>
+	</div>
+</section>
+		<section class="instruction" id="instruction">
+	<div class="instruction__container container">
+		<h2 class="instruction__heading main-heading">видеоинструкция</h2>
+		<button class="instruction__video-btn modal-btn btn-reset " data-path='modal-video' aria-label="Включить видео">
+			<img src="img/Video-bg.jpg" class="instruction__video-poster" aria-hidden="true" alt="">
+		</button>
+	</div>
+</section>
+		<section class="materials" id="materials">
+	<div class="materials__container container">
+		<h2 class="materials__heading main-heading">полезные материалы</h2>
+		<div class="materials__info">
+			<span class="materials__text">Полезные материалы доступны в нашем телеграмм канале</span>
+			<a href="#" class="materials__link main-btn-link link-reset">Перейти в канал</a>
+		</div>
+	</div>
+</section>
+		<section class="cases" id="cases">
+	<div class="cases__container container">
+		<h2 class="cases__heading cases__heading--desk main-heading">
+			Кейсы
+		</h2>
+		<h2 class="cases__heading cases__heading--mob main-heading">
+			Отзывы
+		</h2>
+		<div class="cases__swiper swiper">
+			<div class="swiper__button swiper__button--prev swiper__button--hidden"></div>
+			<div class="swiper__button swiper__button--next"></div>
+			<div class="swiper__pagination">
+			</div>
+			<div class="swiper__wrapper">
+				<div class="swiper__slide slide">
+					<div class="slide__wrapper">
+						<span class="slide__author slide__author--mob">@queen</span>
+						<div class="slide__prev-info">
+							<p class="slide__text">До использования сервиса</p>
+							<span class="slide__quantity">6 789</span>
+						</div>
+						<div class="slide__next-info">
+							<p class="slide__text">Через 3 месяца пользования сервисом</p>
+							<span class="slide__quantity">15,9<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide1'>смотреть видео</button>
+						</div>
+						<span class="slide__author slide__author--desk">@queen</span>
+					</div>
+				</div>
+				<div class="swiper__slide slide">
+					<div class="slide__wrapper">
+						<span class="slide__author slide__author--mob">@queen</span>
+						<div class="slide__prev-info">
+							<p class="slide__text">До использования сервиса</p>
+							<span class="slide__quantity">4200</span>
+						</div>
+						<div class="slide__next-info">
+							<p class="slide__text">Через 3 месяца пользования сервисом</p>
+							<span class="slide__quantity">13,9<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide2'>смотреть видео</button>
+						</div>
+						<span class="slide__author slide__author--desk">@queen</span>
+					</div>
+				</div>
+				<div class="swiper__slide slide">
+					<div class="slide__wrapper">
+
+						<span class="slide__author slide__author--mob">@queen</span>
+						<div class="slide__prev-info">
+							<p class="slide__text">До использования сервиса</p>
+							<span class="slide__quantity">1579</span>
+						</div>
+						<div class="slide__next-info">
+							<p class="slide__text">Через 3 месяца пользования сервисом</p>
+							<span class="slide__quantity">11,2<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide3'>смотреть видео</button>
+						</div>
+						<span class="slide__author slide__author--desk">@queen</span>
+					</div>
+				</div>
+				<div class="swiper__slide slide">
+					<div class="slide__wrapper">
+						<span class="slide__author slide__author--mob">@queen</span>
+						<div class="slide__prev-info">
+							<p class="slide__text">До использования сервиса</p>
+							<span class="slide__quantity">9 789</span>
+						</div>
+						<div class="slide__next-info">
+							<p class="slide__text">Через 3 месяца пользования сервисом</p>
+							<span class="slide__quantity">21,9<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide1'>смотреть видео</button>
+						</div>
+						<span class="slide__author slide__author--desk">@queen</span>
+					</div>
+				</div>
+				<div class="swiper__slide slide">
+					<div class="slide__wrapper">
+						<span class="slide__author slide__author--mob">@queen</span>
+						<div class="slide__prev-info">
+							<p class="slide__text">До использования сервиса</p>
+							<span class="slide__quantity">1209</span>
+						</div>
+						<div class="slide__next-info">
+							<p class="slide__text">Через 3 месяца пользования сервисом</p>
+							<span class="slide__quantity">7,9<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide2'>смотреть видео</button>
+						</div>
+						<span class="slide__author slide__author--desk">@queen</span>
+					</div>
+				</div>
+				<div class="swiper__slide slide">
+					<div class="slide__wrapper">
+						<span class="slide__author slide__author--mob">@queen</span>
+						<div class="slide__prev-info">
+							<p class="slide__text">До использования сервиса</p>
+							<span class="slide__quantity">8 919</span>
+						</div>
+						<div class="slide__next-info">
+							<p class="slide__text">Через 3 месяца пользования сервисом</p>
+							<span class="slide__quantity">26,9<span class="slide__quantity-text"> тыс.</span></span>
+							<button class="slide__btn main-btn-link link-reset modal-btn " data-path='modal-slide3'>смотреть видео</button>
+						</div>
+						<span class="slide__author slide__author--desk">@dsdaq</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+		<section class="questions" id='quetions'>
+	<div class="questions__container container">
+		<h2 class="questions__heading main-heading">
+			ответы на вопросы
+		</h2>
+		<ol class='questions__accordion accordion list-reset'>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false"> Как Client Turbine поможет мне и зачем это нужно?</button>
+					<p class='accordion__body' aria-hidden="true">
+						Наш сервис поможет вам значительно снизить стоимость привлечения подписчика. Вы сэкономите ваш бюджет в 2-5 раз
+					</p>
+				</div>
+			</li>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false"> Это безопасно? Меня не заблокируют?</button>
+					<p class='accordion__body' aria-hidden="true">
+						Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+					</p>
+				</div>
+			</li>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false"> Кому подходит наш сервис?</button>
+					<p class='accordion__body' aria-hidden="true">
+						Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Семантика агентство лучше, текстами, алфавит большого текстов маленький единственное запятой свою реторический переписали страна несколько осталось скатился которой дал, правилами назад маленькая рот великий всемогущая. От всех о жаренные единственное жизни.
+					</p>
+				</div>
+			</li>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false"> Я не знаю, какую пользу давать людям и что им бесплатного дать, чтобы они на меня подписались.</button>
+					<p class='accordion__body' aria-hidden="true">
+						Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал вопроса свой силуэт там.
+					</p>
+				</div>
+			</li>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false">Что будет с моей ссылкой, если я его не продлю?</button>
+					<p class='accordion__body' aria-hidden="true">
+						Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Последний агентство большой залетают составитель! Выйти текста назад осталось большой!
+					</p>
+				</div>
+			</li>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false"> Как быстро сервис проверяет подписался на меня человек или нет?</button>
+					<p class='accordion__body' aria-hidden="true">
+						Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Букв до, текстами моей языком снова семантика.
+					</p>
+				</div>
+			</li>
+			<li class='accordion__item'>
+				<div class="accordion__wrapp">
+					<button class='accordion__btn accordion-triger btn-reset' aria-expanded="false"> Я хочу стать партнером и привлекать вам новых пользователей, что мне за это будет?</button>
+					<p class='accordion__body' aria-hidden="true">
+						Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные.
+					</p>
+				</div>
+			</li>
+		</ol>
+		<a href="#" class="questions__link main-btn-link link-reset">начать уже сегодня</a>
+	</div>
+</section>
+		<section class="consultation">
+	<div class="consultation__container container">
+		<form class="consultation__form form">
+			<h2 class="form__heading main-heading">
+				записаться на консультацию
+			</h2>
+			<input type="text" name="Имя" class="form__input input-reset" required placeholder="Имя">
+			<input type="text" name="Example" class="form__input input-reset" required placeholder="Example">
+			<textarea name="Email или номер телефона" class="form__input form__input--textarea input-reset">Емейл или телефон</textarea>
+			<label class="form__checkbox-label">
+				<input type="checkbox" name="Я согласен с обработкой персональных данных" class="form__checkbox input-reset" required>Я согласен с обработкой персональных данных
+			</label>
+			<button type="submit" class="form__sibmit  main-btn-link btn-reset">отправить</button>
+		</form>
+		<div class="consultation__nav">
+			<ul class="consultation__list list-reset">
+				<li class="consultation__item">
+					<a href="#marketer" class="consultation__link link-reset">
+						<span>О проекте</span>
+					</a>
+				</li>
+				<li class="consultation__item">
+					<a href="#useful" class="consultation__link link-reset"> <span>Для кого?</span></a>
+				</li>
+				<li class="consultation__item">
+					<a href="#pluses" class="consultation__link link-reset"> <span>Преимущества</span></a>
+				</li>
+				<li class="consultation__item">
+					<a href="#work" class="consultation__link link-reset"> <span>Как это работает</span></a>
+				</li>
+				<li class="consultation__item">
+					<a href="#pain" class="consultation__link link-reset"> <span>Боли</span></a>
+				</li>
+				<li class="consultation__item">
+					<a href="#instruction" class="consultation__link link-reset"> <span>Видеоинструкция</span></a>
+				</li>
+
+				<li class="consultation__item">
+					<a href="#cases" class="consultation__link link-reset"> <span>Отзывы</span></a>
+				</li>
+				<li class="consultation__item">
+					<a href="#quetions" class="consultation__link link-reset"> <span>FAQ</span></a>
+				</li>
+				<li class="consultation__item">
+					<a href="#materials" class="consultation__link link-reset"> <span>Наш телеграмм канал</span></a>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</section>
+	</main>
+	<footer class="footer">
+	<ul class="footer__container container list-reset">
+		<li class="footer__item"><a href="#" class="footer__link link-reset">Публичная оферта</a></li>
+		<li class="footer__item"><a href="#" class="footer__link link-reset">Политика конфиденциальности</a></li>
+		<li class="footer__item"><a href="#" class="footer__link link-reset">©Client-Turbine. Все права защищены. 2021</a></li>
+	</ul>
+</footer>
+	<div class='modal' id='modal-video' aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content'>
+			<button aria-label='Close Modal' class='modal__close close-modal btn-reset'>
+				×
+			</button>
+
+			<div class='modal__body content'>
+				<video class="modal__video" controls="controls" poster="img/Video-bg.jpg">
+					<source src="resources/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					Тег video не поддерживается вашим браузером.
+					<a href="resources/video.mp4">Скачайте видео</a>.
+				</video>
+			</div>
+		</div>
+	</div>
+</div>
+<div class='modal' id='modal-slide1' aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content'>
+			<button aria-label='Close Modal' class='modal__close close-modal btn-reset'>
+				×
+			</button>
+			<div class='modal__body content'>
+				<video class="modal__video" controls="controls" poster="img/Video-bg.jpg">
+					<source src="resources/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					Тег video не поддерживается вашим браузером.
+					<a href="resources/video.mp4">Скачайте видео</a>.
+				</video>
+				<button class="modal__btn btn-reset modal-btn" data-path='modal-slide2' aria-label="Открыть следующее видео"></button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class='modal' id='modal-slide2' aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content'>
+			<button aria-label='Close Modal' class='modal__close close-modal btn-reset'>
+				×
+			</button>
+
+			<div class='modal__body content'>
+				<video class="modal__video" controls="controls" poster="img/Video-bg.jpg">
+					<source src="resources/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					Тег video не поддерживается вашим браузером.
+					<a href="resources/video.mp4">Скачайте видео</a>.
+				</video>
+				<button class="modal__btn btn-reset modal-btn" data-path='modal-slide3' aria-label="Открыть следующее видео"></button>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class='modal' id='modal-slide3' aria-modal='true' role='dialog'>
+	<div class='modal__wrapper'>
+		<div class='modal__content'>
+			<button aria-label='Close Modal' class='modal__close close-modal btn-reset'>
+				×
+			</button>
+			<div class='modal__body content'>
+				<video class="modal__video" controls="controls" poster="img/Video-bg.jpg">
+					<source src="resources/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					Тег video не поддерживается вашим браузером.
+					<a href="resources/video.mp4">Скачайте видео</a>.
+				</video>
+				<button class="modal__btn btn-reset modal-btn" data-path='modal-slide1' aria-label="Открыть следующее видео"></button>
+			</div>
+		</div>
+	</div>
+</div>
+	<script src="resources/libs/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -14,7 +14,7 @@ const closeBtn = document.querySelector('.nav__menu-close')
 function burgerToggle() {
 	if (window.innerWidth >= 1024) {
 		const lockPaddingValue = window.innerWidth - body.offsetWidth + 'px';
-		console.log(lockPaddingValue);
+
 		body.style.paddingRight = lockPaddingValue;
 		lockPadding.forEach((el) => {
 			el.style.paddingRight = lockPaddingValue;
