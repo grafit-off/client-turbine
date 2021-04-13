@@ -164,7 +164,7 @@
 				width: 20px;
 				height: 20px;
 
-				background: url(../../img/icon-done.svg) center/cover no-repeat;
+				background: url(../img/icon-done.svg) center/cover no-repeat;
 				transform: translate(0, -50%);
 				@media (max-width: $md3+px) {
 					right: 130px;
@@ -176,7 +176,7 @@
 		}
 		&--lock {
 			&::after {
-				background: url(../../img/icon-lock.svg) center/cover no-repeat;
+				background: url(../img/icon-lock.svg) center/cover no-repeat;
 			}
 		}
 		@media (max-width: $md3+px) {
