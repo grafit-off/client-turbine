@@ -1,56 +1,39 @@
-// Snackbar
-.snackbar {
-	position: fixed;
-	bottom: 30px;
-	right: 50px;
-	z-index: 1;
+.footer {
+	&__container {
+		display: flex;
+		justify-content: space-between;
 
-	width: auto;
-	min-width: 200px;
-	padding: 15px;
-	visibility: hidden;
-
-	border-radius: 2px;
-
-	color: #fff;
-
-	text-align: center;
-	@media (max-width: $md3+px) {
-		right: 50%;
-		transform: translateX(50%);
+		@media (max-width: $md2+px) {
+			flex-wrap: wrap;
+		}
+		@include maxwidth(600) {
+			flex-direction: column;
+		}
 	}
-}
 
-.snackbar.show-notification {
-	visibility: visible;
-	background-color: #333;
-	/* Если 3000 в js, то в стилях 2.6s */
-	animation: fadein 0.5s, fadeout 0.5s 2.6s;
-}
-.snackbar.show-attention {
-	visibility: visible;
-	background-color: rgb(255, 96, 96);
-	/* Если 3000 в js, то в стилях 2.6s */
-	animation: fadein 0.5s, fadeout 0.5s 2.6s;
-}
-@keyframes fadein {
-	from {
-		bottom: 0;
-		opacity: 0;
-	}
-	to {
-		bottom: 30px;
-		opacity: 1;
-	}
-}
+	&__item {
+		flex: 0 0 33.33%;
+		margin-bottom: 10px;
+		@media (max-width: $md2+px) {
+			&:nth-child(3n + 1) {
+				flex: 0 0 100%;
+			}
+			flex: 0 0 50%;
+		}
 
-@keyframes fadeout {
-	from {
-		bottom: 30px;
-		opacity: 1;
+		@include maxwidth(600) {
+			flex: auto;
+		}
 	}
-	to {
-		bottom: 0;
-		opacity: 0;
+
+	&__link {
+		color: #787878;
+
+		font-size: 14px;
+		line-height: 200%;
+		text-decoration-line: underline;
+		@media (max-width: $md3+px) {
+			font-size: 13px;
+		}
 	}
 }

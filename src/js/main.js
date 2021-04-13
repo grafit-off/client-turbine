@@ -157,3 +157,15 @@ document.querySelectorAll('.accordion-triger').forEach((item) =>
 	})
 )
 // -- //
+
+
+// Validate
+
+const formTeaxtarea = document.querySelector('.form__input--textarea');
+formTeaxtarea.addEventListener('click', () => {
+	if (formTeaxtarea.value == 'Емейл или телефон') {
+		formTeaxtarea.value = '';
+	}
+})
+
+// -- //

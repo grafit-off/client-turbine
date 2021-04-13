@@ -94,6 +94,7 @@
 	}
 
 	&__body {
+		position: relative;
 	}
 	&__video {
 		width: 100%;
@@ -102,6 +103,19 @@
 		}
 		@media (max-width: $md3+px) {
 			outline: none;
+		}
+	}
+	&__btn {
+		position: absolute;
+		bottom: 50px;
+		right: 50px;
+
+		width: 150px;
+		height: 150px;
+
+		background: url(../../img/slide-arrow.svg) center/cover no-repeat;
+		@media (max-width: $md2+px) {
+			display: none;
 		}
 	}
 }
